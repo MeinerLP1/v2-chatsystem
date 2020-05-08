@@ -7,14 +7,8 @@ public class ChatPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().config("Initiate Bukkit Chat System");
         getConfig().options().copyDefaults(true);
         saveConfig();
         getServer().getPluginManager().registerEvents(new ChatListener(), this);
-    }
-
-    @Override
-    public void onDisable() {
-
     }
 }
