@@ -1,0 +1,10 @@
+name: ChatPlugin
+main: eu.cloudnetservice.chatsystem.ChatPlugin
+version: ${chat.version}
+
+author: TheMeinerLP
+depend: [CloudNetAPI]
+description: CloudNet Chat System for the Central server
+website: https://cloudnetservice.eu/
+
+api-version: 1.13
