@@ -29,14 +29,6 @@ pipeline {
         sh 'mvn package'
       }
     }
-    stage('Release ZIP') {
-      steps {
-        sh '''mkdir -p temp;
-        cp chat-plugin/target/*.jar temp/;'''
-        zip archive: true, dir: 'temp', glob: '', zipFile: 'ChatSystem.zip'
-        sh 'rm -r temp/';
-      }
-    }
     stage('Archive') {
       steps {
         archiveArtifacts allowEmptyArchive: true, artifacts: '**/target/Chat*.jar', fingerprint: true, onlyIfSuccessful: true
