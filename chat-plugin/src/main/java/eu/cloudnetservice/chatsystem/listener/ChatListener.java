@@ -27,30 +27,30 @@ public final class ChatListener implements Listener {
         }
 
         e.setFormat(ChatColor.translateAlternateColorCodes('&',
-                                                           ChatPlugin.getPlugin(ChatPlugin.class)
-                                                                     .getConfig()
-                                                                     .getString("format")
-                                                                     .replace("%display%",
-                                                                              ChatColor.translateAlternateColorCodes('&',
-                                                                                                                     permissionGroup.getDisplay()))
-                                                                     .replace("%prefix%",
-                                                                              ChatColor.translateAlternateColorCodes('&',
-                                                                                                                     permissionGroup.getPrefix()))
-                                                                     .replace("%suffix%",
-                                                                              ChatColor.translateAlternateColorCodes('&',
-                                                                                                                     permissionGroup.getSuffix()))
-                                                                     .replace("%group%", permissionGroup.getName())
-                                                                     .replace("%player%", e.getPlayer().getName())
-                                                                     .replace("%message%",
-                                                                              e.getPlayer().hasPermission("cloudnet.chat.color") ? ChatColor
-                                                                                  .translateAlternateColorCodes('&',
-                                                                                                                e.getMessage()
-                                                                                                                 .replace("%",
-                                                                                                                          "%%")) : ChatColor
-                                                                                  .stripColor(ChatColor.translateAlternateColorCodes('&',
-                                                                                                                                     e.getMessage()
-                                                                                                                                      .replace(
-                                                                                                                                          "%",
-                                                                                                                                          "%%"))))));
+            ChatPlugin.getPlugin(ChatPlugin.class)
+                      .getConfig()
+                      .getString("format")
+                      .replace("%display%",
+                          ChatColor.translateAlternateColorCodes('&',
+                              permissionGroup.getDisplay()))
+                      .replace("%prefix%",
+                          ChatColor.translateAlternateColorCodes('&',
+                              permissionGroup.getPrefix()))
+                      .replace("%suffix%",
+                          ChatColor.translateAlternateColorCodes('&',
+                              permissionGroup.getSuffix()))
+                      .replace("%group%", permissionGroup.getName())
+                      .replace("%player%", e.getPlayer().getName())
+                      .replace("%message%",
+                          e.getPlayer().hasPermission("cloudnet.chat.color") ? ChatColor
+                              .translateAlternateColorCodes('&',
+                                  e.getMessage()
+                                   .replace("%",
+                                       "%%")) : ChatColor
+                              .stripColor(ChatColor.translateAlternateColorCodes('&',
+                                  e.getMessage()
+                                   .replace(
+                                       "%",
+                                       "%%"))))));
     }
 }
