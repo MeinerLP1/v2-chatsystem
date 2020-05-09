@@ -31,7 +31,7 @@ pipeline {
     }
     stage('Archive') {
       steps {
-        archiveArtifacts allowEmptyArchive: true, artifacts: 'chat-plugin/target/chat*.jar', fingerprint: true, onlyIfSuccessful: true
+        archiveArtifacts allowEmptyArchive: true, artifacts: 'chat-plugin/target/chat-plugin-*.jar', fingerprint: true, onlyIfSuccessful: true
       }
     }
   }
