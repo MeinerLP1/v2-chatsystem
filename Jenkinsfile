@@ -31,7 +31,7 @@ pipeline {
     }
     stage('Archive') {
       steps {
-        archiveArtifacts allowEmptyArchive: true, artifacts: '**/target/Chat*.jar', fingerprint: true, onlyIfSuccessful: true
+        archiveArtifacts allowEmptyArchive: true, artifacts: '*/target/Chat*.jar', fingerprint: true, onlyIfSuccessful: true
       }
     }
   }
