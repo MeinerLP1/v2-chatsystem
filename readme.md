@@ -13,7 +13,7 @@
 # Chat System | The Cloud Network Environment Technology 2
 ![Image of CloudNet](https://cdn.discordapp.com/attachments/325383142464552972/354670548292206594/CloudNet.png)
 
-This is the SimpleNametag System for CloudNet 2.2.0
+This is the Chat System for CloudNet 2.2.0
  
 
 ___
