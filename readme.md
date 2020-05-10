@@ -29,7 +29,7 @@ ___
  | [Glowstone(Not Tested)](https://www.glowstone.net/) | :interrobang: | :interrobang: | :interrobang: | :interrobang: | :interrobang: | :interrobang: | :interrobang: | :interrobang: |
 
  #### Proxy-Support
- > Need no proxy support is only a spigot side plugin
+ > This is a spigot only plugin, proxy support is therefore not needed.
  
  
  #### CloudNet-Support
